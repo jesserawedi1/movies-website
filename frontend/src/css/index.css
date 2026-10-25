@@ -1,0 +1,51 @@
+:root {
+  --bg: #0b0b12;
+  --surface: #151520;
+  --surface-2: #1e1e2c;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f1f1f6;
+  --muted: #9a9ab0;
+  --accent: #ff4d5a;
+  --accent-2: #ff8a4c;
+  --radius: 14px;
+
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: dark;
+  color: var(--text);
+  background-color: var(--bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { overflow-x: hidden; }
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(255, 77, 90, 0.12), transparent 60%),
+    radial-gradient(800px 500px at 100% 0%, rgba(255, 138, 76, 0.08), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+#root { width: 100%; min-height: 100vh; display: flex; flex-direction: column; }
+
+a { color: inherit; text-decoration: none; }
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  background: none;
+}
+
+input { font-family: inherit; }
+
+::selection { background: var(--accent); color: #fff; }
